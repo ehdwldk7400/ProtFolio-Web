@@ -1,6 +1,12 @@
 @charset "utf-8";
 
+body {
+  background: #f2f2f2;
+}
+.headerIn {
+}
 div.log-menu {
+  position: fixed;
   width: 100%;
   height: 90px;
   display: flex;
@@ -18,6 +24,80 @@ div.logo a {
   height: 90px;
   font-size: 48px;
 }
+div.user-menu > ul {
+  width: 600px;
+  height: auto;
+  display: flex;
+}
+div.user-menu > ul li {
+  width: 200px;
+  height: 90px;
+  line-height: 90px;
+  text-align: center;
+}
+
 input#Join {
   display: none;
+}
+input#Login {
+  display: none;
+}
+input#bar {
+  display: none;
+}
+input#Join + label {
+  font-size: 36px;
+}
+input#Login + label {
+  font-size: 36px;
+}
+input#bar + label {
+  font-size: 36px;
+}
+.main-con1 {
+  width: 100%;
+  height: 100vh;
+}
+div.con1 {
+  width: 100%;
+  height: 100%;
+}
+
+div#test2 {
+  width: 100%;
+  height: 100vh;
+  background: #000;
+}
+div.main_img {
+  /* width: 400px;
+  height: 640px; */
+  /* overflow: hidden; */
+}
+div.main_img img {
+  position: absolute;
+  margin-top: 170px;
+  margin-left: 312px;
+  margin-bottom: 100px;
+  width: 400px;
+  height: 640px;
+}
+div.con1-text {
+  position: absolute;
+  text-align: right;
+  margin-right: 318px;
+  /* margin-top: 440px; */
+  top: 440px;
+  right: 0;
+}
+
+div.con1-text h1 {
+  /* display: inline-block; */
+  font-family: "Courier", serif;
+  font-size: 64px;
+  margin-bottom: 60px;
+}
+div.con1-text p {
+  /* display: inline-block; */
+  margin-bottom: 360px;
+  font-family: "Noto Sans KR", sans-serif;
 }
