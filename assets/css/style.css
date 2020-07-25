@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+div.log-menu {
+  width: 100%;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+div.logo {
+  width: 200px;
+  height: auto;
+  text-align: center;
+}
+div.logo a {
+  padding-top: 10px;
+  width: 100%;
+  height: 90px;
+  font-size: 48px;
+}
+input#Join {
+  display: none;
+}
