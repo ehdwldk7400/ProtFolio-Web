@@ -6,7 +6,7 @@ body {
 }
 
 /* 해더 영역 설정 */
-.headerIn {
+#headerIn {
 }
 div.log-menu {
   position: fixed;
@@ -54,8 +54,54 @@ input#bar {
   display: none;
 }
 input#Join + label {
+  display: inline-block;
   font-size: 36px;
 }
+input#Join + label + div {
+  position: fixed;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 1s;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 100;
+}
+input#Join:checked + label + div {
+  opacity: 1;
+  visibility: visible;
+}
+input#Join + label + div > div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 300px;
+  background: #fff;
+  z-index: 102;
+}
+input#Join + label + div > div > label {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  transform: translate(40%, -40%);
+  padding: 20px;
+  background: #dd5347;
+  border-radius: 100%;
+  z-index: 101;
+}
+input#Join + label + div > label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 101;
+}
+
 input#Login + label {
   font-size: 36px;
 }
@@ -71,6 +117,7 @@ input#bar + label {
 div.con1 {
   width: 100%;
   height: 100%;
+  z-index: -9999;
 }
 
 div.main_img {
